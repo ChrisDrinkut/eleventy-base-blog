@@ -9,6 +9,8 @@ Leverage agile frameworks to provide a robust synopsis for high level overviews.
 
 ![alternate text](11FAD898-FA54-412A-8B12-0E82D41E7F3D_4_5005_c.jpeg "hover title")
 
+[details here](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref/Images.html)
+
 Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
 
 ## Section Header
