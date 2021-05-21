@@ -9,36 +9,443 @@
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
-  </head>
-  <body>
-    <header>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text:700|Roboto+Mono&display=swap" rel="stylesheet">		
+		
+	<style>
+	.topper .fa {color:white !Important;}
+	.topper .fa:hover {color: grey !IMPORTANT;}	
+	</style>
+	</head>
 
-      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <ul class="nav">
-      {%- for entry in collections.all | eleventyNavigation %}
-        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-      {%- endfor %}
-      </ul>
-    </header>
+	<body class="page-template page-template-template-take-control-main page-template-template-take-control-main-php page page-id-1116 page-parent" itemscope itemtype="http://schema.org/WebPage">
+		<div class="mobile-overlay"></div>
 
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+		<div id="container">
+		    
 
-      <!-- Delete this message
-      <div class="warning">
-        <ol>
-          <li>Edit the <code>_data/metadata.json</code> with your blog’s information.</li>
-          <li>(Optional) Edit <code>.eleventy.js</code> with your <a href="https://www.11ty.dev/docs/config/">configuration preferences</a>.</li>
-          <li>Delete this message from <code>_includes/layouts/base.njk</code>.</li>
-        </ol>
-        <p><em>This is an <a href="https://www.11ty.dev/">Eleventy project</a> created from the <a href="https://github.com/11ty/eleventy-base-blog"><code>eleventy-base-blog</code> repo</a>.</em></p>
+		    
+<style>
+
+:root{--light-tan:#faf8ed;--teal:#118d93;--pink:#ff9f9c}body{color:var(--teal);font-weight:200}h1,h2,h3{font-family:'Crimson Text',serif;font-weight:700}.header--hello{background-image:url(https://www.fhccp.org/wp-content/uploads/2019/06/export-test-mobile-bg8x6.jpg);background-position:center;background-size:cover;padding:3em 1em}.fa{padding-left:1em;color:#ffadae;font-size:1.35rem}.header--hello h1{color:var(--teal);line-height:.9;margin:0}.header--hello h2{color:var(--teal);padding-top:.5em;line-height:1;font-size:1.5em;padding-bottom:.8em}.supporting-org{color:#fff;font-weight:600;letter-spacing:1px;padding-top:1em}.desk-only{display:none}.mobile-only{display:block}.mobile-only h1{font-size:1.85em;line-height:1.133em}.form-section{background-color:#faf8ed;padding:5em 2em;text-align:center}.form-section h2{color:var(--teal);font-size:1.95rem}.gform_wrapper .top_label .gfield_label{font-weight:500;letter-spacing:1px;text-transform:uppercase;font-size:.9em;padding-left:1em}.gform_wrapper .top_label div.ginput_container{margin-top:0!important}.gform_wrapper .top_label input.medium,.gform_wrapper .top_label select.medium{width:100%;border-radius:16px!important;background-color:#fff!important}.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]){background:#fff!important}.gform_wrapper .gform_footer input[type=submit],input[type=submit]{background-color:var(--teal)!important;border:none!important;font-weight:200;letter-spacing:1px;font-size:.9em}.gform_body{padding:3em}.gform_footer{display:grid;max-width:300px;margin:auto!important}.email-section{background-image:url(https://www.fhccp.org//wp-content/uploads/2020/06/form-bg.jpg);background-repeat:no-repeat;background-size:cover;padding:5em 1em;overflow:hidden;text-align:center}.email-section h2{color:#fff;font-size:1.95rem}#mce-EMAIL{background:#fff!important;border-radius:22px!important;opacity:.75}#mc_embed_signup{padding-top:2em}#mc_embed_signup_scroll{overflow:hidden;padding:2em;display:grid;grid-template-columns:repeat(12,1fr)}.mc-field-group{grid-column:2/12;grid-row:1/1;grid-column:2/12;text-align:left;padding-right:0}.email-label{font-weight:500;letter-spacing:1px;text-transform:uppercase;font-size:.9em;padding-left:1em;padding-left:1em}.sub-button{grid-column:4/10;grid-row:2/2}footer{padding:5em 1em}header .social{position:relative;top:-1em;text-align:right}.footer-social{position:relative;text-align:right;display:block}.visit-us{display:block;text-align:right;color:#fff!important;font-weight:600}@media screen and (min-width:768px){.header--hello{background-image:url(https://www.fhccp.org/wp-content/uploads/2019/06/desk-bg.jpg);padding:10em 5em}header .social{top:-9em}.desk-only{display:block;padding-right:15%}.mobile-only{display:none}.email-section h2,.form-section h2{font-size:2.5rem}#gform_fields_2{display:grid;grid-template-columns:50% 50%}#gform_confirmation_message_2{border:1px solid grey;background:#fff;font-size:2.5rem;max-width:850px;margin:auto;border-radius:16px;padding:2em}.mc-field-group{grid-column:4/9;text-align:left;padding-right:1em}.sub-button{grid-column:9/10;padding-top:1em;grid-row:1;margin:auto}}
+	
+	
+	:root {
+		--pink: #FF9F9C; 
+		--teal: #0F8D92;
+		--grey: #989899;
+		--tan: #FAF8ED;
+		--smoke: #F7F7F7;
+	}
+	
+.get-started, input[type=submit] {
+	/* font-weight: 200; needs !important */
+    letter-spacing: 1px;
+    font-size: .9em;
+    border: none;
+    border-radius: 50px !important;
+    padding: 10px 30px !important;
+    font-weight: bold;
+    background-color: var(--pink) !IMPORTANT;
+	color: #fff;
+}
+	
+	.get-started:hover, input[type=submit]:hover {
+		background-color: #989899 !Important;
+		color: white;
+	}
+	
+	.header .get-started {
+		background-color: var(--smoke) !Important;
+	}
+
+.faqs {
+    background-color: #fff;
+    padding: 5em 2em;
+    text-align: center;    
+}
+	
+	.btn-faq {
+		border: 1px solid var(--pink);
+		color: var(--teal);
+		margin-top: 2em;
+		font-size: .9em;
+		position: relative;
+    min-height: 6em;
+    padding-right: 4em;
+    display: grid;
+    align-items: center;	
+		width: 100%
+	}
+	
+	.span-faq {
+	padding-left: 2em;
+    font-size: 4em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 .3em 0 1em;	
+	color: var(--pink);
+	}
+	
+	.faq-p {
+	padding: 0 2em;
+    max-width: 625px;
+    margin: 1em auto;
+	}
+
+	.pad-up-down {
+		padding: 1.5em 0;
+	}
+	
+.provider-map {
+    background-color: #faf8ed;
+    padding: 5em 2em;
+    text-align: center;
+}
+
+#countyChoice {
+    max-width: 100% !important;
+    /*background: #f2f2f2 !important; */
+    color: #83b8b9 !important;
+    border: none !important;
+    border-radius: 5px !important;
+    padding-left: 15px !important;
+	width: 100%;
+    
+letter-spacing: 1px;
+    font-size: .9em;
+    border: none;
+    border-radius: 50px !important;
+    padding: 10px 30px !important;
+    font-weight: bold;    
+    margin-bottom: 1em;
+}
+	
+#mc_embed_signup_scroll {
+    display: block;
+	padding: 0;
+}	
+	
+#mc_embed_signup {
+    padding: 0;
+}	
+	
+	.topper .fa, .topper a {
+		color: white !Important;
+	}
+	
+	.provider-map {
+		background-image: url(https://www.fhccp.org/wp-content/uploads/2020/06/map.jpg);
+    background-position: bottom right;
+	}
+	
+	a[href$=".pdf"]:after {
+    width: 32px;
+    height: 32px;
+    background: url(https://www.fhccp.org/wp-content/uploads/2018/11/pdf-file-icon-32x32.png);
+    display: none;
+    content: ' ';
+    vertical-align: text-bottom;
+}	
+		
+	.header--link {
+		font-weight: bold;
+	}
+	
+			 .social-wrap {
+     display: grid;
+     grid-template-columns: auto auto;
+     max-width: 60px;
+     margin: auto;
+ }			
+	
+	@media screen and (min-width:1340px) {
+		.provider-map {
+		    background-position: bottom left;
+    background-repeat: no-repeat;
+		}
+}	
+
+	
+</style>
+	
+
+   <div class="fluid-container topper" style="padding: 2vh 0em; background-color:#ffadae;">
+                    <div class="container">
+                        
+                    <div class="row">
+                        <div class="col"><a class="header--link" href="/take-control/">BLOG</a>&nbsp;&nbsp;
+						<a class="header--link" href="/hiv-frequently-asked-questions/">FAQs</a></div>
+                        
+						<div class="col" style="text-align: center;"><a title="FHCCP" href="/take-control-hiv"><img src="https://www.fhccp.org/wp-content/uploads/2020/01/fhccp-transparent-Logo.png" alt="logo"></a></div>
+                        
+						<div class="col" style="text-align: right;"> 
+						    <div class="social-wrap">
+								<a href="https://www.instagram.com/takecontrolhiv/" target="_blank">
+									<i class="fa fa-instagram"></i><span class="sr-only">Instagram Icon</span>
+								</a>
+								<a href="https://www.facebook.com/Take-Control-HIV-910618125938701/" target="_blank">
+									<i class="fa fa-facebook fa-lg"></i><span class="sr-only">Facebook Icon</span>
+								</a>
+								</div>			
+						</div>
+                    </div>
+                    </div>    
+				</div>		
+
+
+    <div id="content">
+
+            <main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+				
+				<header class="container-fluid header--hello">
+				    <div class="container">
+						<div class="row">
+							<div class="col-4 col-md-6">
+								<section class="desk-only">
+									<h1>There’s more to you.</h1> 
+									<h2>
+										Take on life and take control of your HIV.
+									</h2>
+									<p>By keeping up with medical treatments, you can live life more in the moment and be more of you. With regular HIV treatments, you’re able to stop the spread of HIV and live your life to the fullest.</p> 
+
+<p>If you’re uninsured or underinsured, you might be eligible to receive free help within central Pennsylvania from leading medical providers.</p>
+									
+	<p>See how there’s more to life and more to you.</p>
+
+<p>Below, connect with an expert healthcare professional to find the best local care.
+</p>
+									<p class="supporting-org">
+										OFFERED BY THE FAMILY HEALTH COUNCIL OF CENTRAL PENNSYLVANIA
+									</p>
+						<!-- button class="get-started">GET STARTED</button -->
+								</section>
+							</div>							
+							<div class="col-8 col-md-6">
+								<section class="mobile-only">
+	<h1>There’s more to you.</h1> 
+									<h2>
+										Take on life and take control of your HIV.
+									</h2>
+									<p>We’re here to connect you with treatment options that help you take control of your life. Contact us to learn more.</p> 
+									
+	<p>See how there’s more to life and more to you.</p>
+
+<p>Fill out the form below to connect with an expert health professional.</p>					
+									<p class="supporting-org">
+										OFFERED BY THE FAMILY HEALTH COUNCIL OF CENTRAL PENNSYLVANIA
+									</p>					
+					<!-- button class="get-started">GET STARTED</button -->
+								</section>
+							</div>
+						</div>
+				        
+				    </div>
+				    <!-- Content here -->
+				</header>
+					                   
+			<section class="faqs">	
+            <div class="container">
+		<!-- FIRST SECTION -->		
+              <div class="row">
+                <div class="col">
+					<a class="btn btn-faq faq" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" onclick="gtag('event', 'button click', { 'event_category' : 'faq engagement', 'event_label' : 'what is hiv' });">What exactly is HIV? It is the same thing as AIDs? <span class="span-faq">&#63;</span></a>
+                </div>
+                <div class="col">
+  <button class="btn btn-faq faq" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" onclick="gtag('event', 'button click', { 'event_category' : 'faq engagement', 'event_label' : 'what are symptoms hiv' });">What are some of the symptoms of HIV? <span class="span-faq">&#63;</span></button>
+                </div>
+                <div class="col">
+  <button class="btn btn-faq faq" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3" onclick="gtag('event', 'button click', { 'event_category' : 'faq engagement', 'event_label' : 'is there cure hiv' });">Is there a cure for HIV? <span class="span-faq">&#63;</span></button>
+                </div>
+              </div>
+				
+<div class="row">
+  <div class="col-12">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+HIV, which is short for Human Immunodeficiency Virus, is a virus that attacks the body’s immune system, weakening it over time. This makes it difficult or impossible for the body to fight off infections and some diseases. If left untreated, HIV can progress into AIDS, Acquired Immune Deficiency Syndrome, the last stage of HIV infection.
       </div>
-      Stop deleting -->
+    </div>
+  </div>
+	
+  <div class="col-sm-12">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+While some don’t exhibit any of the following, initial HIV symptoms can occur between 2 and 4 weeks after exposure and may include chills, fever, rash, muscle aches, night sweats, sore throat, mouth ulcers and more.
+      </div>
+    </div>
+  </div>
+	
+  <div class="col-sm-12">
+    <div class="collapse multi-collapse" id="multiCollapseExample3">
+      <div class="card card-body">
+Currently, there is no cure for HIV. While this may be, modern medical treatments are extremely effective at controlling HIV and, when taken routinely, help people live long, healthy lives.
+      </div>
+    </div>
+  </div>	
+</div>
+              
+         <!-- SECOND SECTION -->     
+              
+				
+              <div class="row">
+                <div class="col">
+  <a class="btn btn-faq faq" data-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4" onclick="gtag('event', 'button click', { 'event_category' : 'faq engagement', 'event_label' : 'long to live' });">Can HIV affect how long I live? <span class="span-faq">&#63;</span></a>
+                </div>
+                <div class="col">
+  <button class="btn btn-faq faq" type="button" data-toggle="collapse" data-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5" onclick="gtag('event', 'button click', { 'event_category' : 'faq engagement', 'event_label' : 'treatment options' });">What are my options for treatment? <span class="span-faq">&#63;</span></button>
+                </div>
+                <div class="col">
+  <button class="btn btn-faq faq" type="button" data-toggle="collapse" data-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample6" onclick="gtag('event', 'button click', { 'event_category' : 'faq engagement', 'event_label' : 'when to start treatment' });">When should I start treatment? <span class="span-faq">&#63;</span></button>
+                </div>
+              </div>
+				
+<div class="row">
+  <div class="col-sm-12">
+    <div class="collapse multi-collapse" id="multiCollapseExample4">
+      <div class="card card-body">
+In most cases, HIV can only impact your lifespan if you are not receiving treatment. Failure to receive treatment will result in HIV progressing to AIDS, which can be fatal. 
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <div class="collapse multi-collapse" id="multiCollapseExample5">
+      <div class="card card-body">
+Antiretroviral therapy, a.k.a. ART, is the most common treatment for HIV. When taken on a regular basis, ART can greatly reduce the content levels of HIV in a person’s blood. ART may come in the form of one pill or several to be taken together. 
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <div class="collapse multi-collapse" id="multiCollapseExample6">
+      <div class="card card-body">
+You should begin treatment as soon as possible after receiving an HIV diagnosis. Delaying treatment may speed up the progression of HIV into AIDS, which can be life threatening. 
+      </div>
+    </div>
+  </div>	
+</div>
+      <div class="faq-text-wrap">
+				<p class="faq-p pad-up-down">
+					We are here to help you find the answers you're looking for, from HIV symptoms to staying healthy and keeping up with treatments. 
+				</p>
+              
+				<a class="faq" href="/hiv-frequently-asked-questions/" onclick="gtag('event', 'button click', { 'event_category' : 'faq engagement', 'event_label' : 'view all faqs' });"><button class="get-started">
+					VIEW ALL FAQS
+					</button></a>
+				</div>				
+            </div>
+			</section>	
+			
+			<section class="provider-map">	
+            <div class="container">			
+            <div class="row">
+            <div class="col-sm-12 col-md-6">
+              
+            </div>
+            <div class="col-sm-12 col-md-6">
+				<h2>
+					find a provider
+				</h2>
+				<p class="pad-up-down">
+					By keeping up with medical treatments, you can take control of your life and live fully.
+				</p>
+                    <div class="input-group input-group-lg mx-auto rounded-pill">
+                    <select id="countyChoice" class="browser-default custom-select" aria-label="county selection">
+                    <option selected value="">Choose A Pennsylvania Location</option>
+                    <option value="/providers-hiv-services/#adams">Adams County</option>
+                    <option value="/providers-hiv-services/#bedford">Bedford County</option>						
+                    <option value="/providers-hiv-services/#blair">Blair County</option>
+                    <option value="/providers-hiv-services/#cumberland">Cumberland County</option>
+					<option value="/providers-hiv-services/#dauphin">Dauphin County</option>
+                    <option value="/providers-hiv-services/#franklin">Franklin County</option>
+                    <option value="/providers-hiv-services/#fulton">Fulton County</option>						
+                    <option value="/providers-hiv-services/#huntingdon">Huntingdon County</option>
+                    <option value="/providers-hiv-services/#juniata">Juniata County</option>						
+					<option value="/providers-hiv-services/#lancaster">Lancaster County</option>
+					<option value="/providers-hiv-services/#lebanon">Lebanon County</option>
+					<option value="/providers-hiv-services/#mifflin">Mifflin County</option>
+					<option value="/providers-hiv-services/#perry">Perry County</option>						
+					<option value="/providers-hiv-services/#york">York County</option>
+                    </select>
+                    <div class="input-group-append">
+                    </div>
+                    <button class="get-started link-cta" type="button" id="Go" onClick="gotowebpage()"> SEARCH
+                    <span class="sr-only sr-only-focusable">Find a Provider</span> </button>
+                    <!-- input type="button" value="SEARCH" name="subscribe" class="button" -->
+                    </div>
+            </div>
+          </div>
+          </div>
+          </section>
+            
+            
+          <div class="fluid-container email-section" id="email">
+            <div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						
+            	<h2 style="color: #616161;">learn more</h2>
+            	 <p>View our free booklet with more information on how to live your best HIV life.</p>
+						
+						<a class="book" href="https://www.fhccp.org/wp-content/uploads/2020/07/FHCCP-HIV2020-Booklet_F_DIGITAL_20200702.pdf" target="_blank" onclick="gtag('event', 'button click', { 'event_category' : 'book engagement', 'event_label' : 'download' });"><button class="get-started">
+							DOWNLOAD BOOKLET
+							</button></a>
+            	        
+            	    </div>
+				<div class="col-sm-12 col-md-6">
+					</div>	
+					
+				
+				</div>
+			  </div>
+            
+				</div>
+            </main>
 
-      {{ content | safe }}
-    </main>
+        <footer class="fluid-container" style="background-color: teal;">
+            <div class="container">
+				<div class="row">
+					<div class="col">
+						<img src="https://www.fhccp.org/wp-content/uploads/2019/06/fhccp-logo.png" alt="logo" />
+					</div>
+					<div class="col">
+						<div class="footer-social">
+						<a href="https://www.instagram.com/takecontrolhiv/" target="_blank">
+							<i class="fa fa-instagram"></i><span class="sr-only">Instagram Icon</span>
+						</a>
+						<a href="https://www.facebook.com/Take-Control-HIV-910618125938701/" target="_blank">
+							<i class="fa fa-facebook fa-lg"></i><span class="sr-only">Facebook Icon</span>
+						</a>
+						</div>							
+					</div>
+				</div>
+				<hr>
+					<div class="row">
+					<div class="col">
+						<p style="color: #faf8ed;">
+							Brought to you by Family Health Council of Central Pennsylvania, Inc.
+						</p>
+					</div>
+					<div class="col">
+						<a style="color:#fff !Important" class="visit-us" href="https://www.fhccp.org/">VISIT FHCCP.ORG</a>
+					</div>					
+				</div>
+                
+            </div>
+        </footer>
 
-    <footer></footer>
+
+  <script type="text/javascript">
+function gotowebpage() {
+window.location = document.getElementById("countyChoice").value;
+}
+</script>
+
 
     <!-- Current page: {{ page.url | url }} -->
   </body>
