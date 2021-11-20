@@ -17,10 +17,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, system-ui, sans-serif;
+  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif; -apple-system, system-ui, sans-serif;
   color: var(--darkgray);
  /* background-color: var(--white); */
-  background-color: f2f2f2;
+  background-color: #f2f2f2;
 }
 p:last-child {
   margin-bottom: 0;
