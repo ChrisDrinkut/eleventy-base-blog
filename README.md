@@ -15,20 +15,25 @@ This is an experiment to test out a variety of items and ideas. These include:
 
 We're live. 
 
+### Beauty of a blockquote 
 
-### (A code block...) 
-``` 
-And we're live. 
+> What a wonderful blockquote
 
-```
+### Bold and Italic 
+
+And *who* can forget about the **BOLD** and the *italic* text features?! Amazing. 
+
+### Icons and Emojis 
+
+[Tell me how you feel](https://gist.github.com/rxaviers/7360908) 
+
+:bowtie::smirk:
 
 ### link set ... 
 
 [Hey Jack](https://chris-drinkut.com)
 [Site link](https://drinkut.com)
 
-### An hr
----
 
 ### A Table
 
@@ -50,17 +55,21 @@ Here's a sentence with a footnote. [^1]
 - [ ] Update the website
 - [ ] Contact the media
 
-### Beauty of a blockquote 
+### An hr
+---
 
-> What a wonderful blockquote
+### (A code block...) 
+``` 
+And we're live. 
 
-### Bold and Italic 
+```
 
-And *who* can forget about the **BOLD** and the *italic* text features?! Amazing. 
+### A Fenced Code Block
 
-### Icons and Emojis 
-
-[Tell me how you feel](https://gist.github.com/rxaviers/7360908) 
-
-
-:bowtie::smirk:
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
