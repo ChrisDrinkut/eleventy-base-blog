@@ -16,8 +16,11 @@ This is an experiment to test out a variety of items and ideas. These include:
 We're live. 
 
 
-(An hr...) 
+(A code block...) 
 ```
+And we're live. 
+'''
+
 link set ... 
 
 [![Hey Jack](https://chris-drinkut.com)]
