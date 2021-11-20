@@ -1,3 +1,22 @@
+# doing stuff! 
+
+This is an experiment to test out a variety of items and ideas. These include: 
+
+* Eleventy & JS framework sites, cms's, mindset, approach
+* Versioning w/ GitHub
+* Catgorization and organization of terms and topics related to: 
+* * Social Sciene 
+* * The Human Brain
+* * Persuasion, Logic, Reasoning, & Decision-Making
+* * Media, Culture, Technology and the Convergence of
+
+## Getting Started
+
+We're live. 
+
+
+--
+
 # eleventy-base-blog
 
 A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
