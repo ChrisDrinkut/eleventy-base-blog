@@ -16,19 +16,21 @@ This is an experiment to test out a variety of items and ideas. These include:
 We're live. 
 
 
-(A code block...) 
+### (A code block...) 
 ``` 
 And we're live. 
 
 ```
 
-link set ... 
+### link set ... 
 
 [Hey Jack](https://chris-drinkut.com)
 [Site link](https://drinkut.com)
 
-
+### An hr
 ---
+
+### A Table
 
 | Syntax | Description |
 | ----------- | ----------- |
@@ -36,20 +38,29 @@ link set ...
 | Paragraph | Text |
 
 
+### A - Jazzy - Footnote combo (be sure to click for part 2) 
 
 Here's a sentence with a footnote. [^1]
 
 [^1]: This is the footnote.
 
 
+### Nifty check list 
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
 
+### Beauty of a blockquote 
+
 > What a wonderful blockquote
+
+### Bold and Italic 
 
 And *who* can forget about the **BOLD** and the *italic* text features?! Amazing. 
 
-270C
+### Icons and Emojis 
 
-U+262E
+[Tell me how you feel](https://gist.github.com/rxaviers/7360908) 
+
+
+:bowtie::smirk:
