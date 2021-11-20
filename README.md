@@ -16,15 +16,13 @@ This is an experiment to test out a variety of items and ideas. These include:
 We're live. 
 
 
---
+(An hr...) 
+```
+link set ... 
 
-# eleventy-base-blog
+[![Hey Jack](https://chris-drinkut.com)]
+[Site link](https://drinkut.com)
 
-A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
-
-[![Build Status](https://travis-ci.org/11ty/eleventy-base-blog.svg?branch=master)](https://travis-ci.org/11ty/eleventy-base-blog)
-
-## Demos
 
 * [Netlify](https://eleventy-base-blog.netlify.com/)
 * [GitHub Pages](https://11ty.github.io/eleventy-base-blog/)
